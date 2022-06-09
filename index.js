@@ -4,8 +4,8 @@ var employee = {};
 function updateEmployeeWithKeyAndValue(employee, key, value){
     
 
-    var newEmployee = Object.assign({}, employee, {[key]: value});
-    return newEmployee;
+    var updatedEmployee = Object.assign({}, employee, {[key]: value});
+    return updatedEmployee;
 }
 
 
@@ -15,9 +15,9 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
 }
 
 function deleteFromEmployeeByKey(employee, key) {
-    var clone = Object.assign({}, employee);
-    delete clone[key];
-    return clone;
+    var employee1 = Object.assign({}, employee);
+    delete employee1[key];
+    return employee1;
   }
   
   function destructivelyDeleteFromEmployeeByKey(employee, key) {
